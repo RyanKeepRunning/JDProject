@@ -1,0 +1,321 @@
+.grid {
+	height: 480px;
+}
+.grid1 {
+	width: 190px;
+	height: 100%;
+	background-color: pink;
+	position: relative;
+}
+.grid1 ul {
+	padding-left: 40px;
+}
+.grid1 li {
+	padding-top: 20px;
+	font-weight: 600;
+}
+.grid1 li .title{
+	font-weight: 600px;
+}
+
+.grid1 li a {
+	color: #52527a;
+}
+.grid1 li a:hover {
+	color: #c81623;
+}
+.ad {
+	position: absolute;
+	width: 174px;
+	height: 471px;
+	top: 0;
+	left: -174px;
+}
+
+.ad-child img {
+	position: absolute;
+	top: 0;
+	left: 174px;
+	width: 0;
+	height: 750px;
+	z-index: 999;
+}
+
+.ad:hover .ad-child img {
+	transition: all 0.8s;
+	width: 750px;
+	/*弹出效果可以通过 1 固定长或宽 （左右或上下拉伸出现）2 默认，长宽同时扩展出现 3 图片设置为div北京，滑移*/
+	/*块体元素（块，列表，table）具备BFC，display属性如plin不具备BFC*/
+	/*必备条件：float属性不为none，position为absolute或fixed，overflow不为visible*/
+	/*BFC使用case 1： 子floatleft,为了让父高度不为0，使其具备BFC特性*/
+	/*case2 同属于一个BFC的盒子 margin会重叠*/
+	/*case3 希望让某个盒子具备自适应特性，左侧存在float盒子*/
+	/*添加方式：主要通过添加overflow:hidden;*/
+
+}
+
+.grid2 {
+	margin-left: 15px;
+	width: 790px;
+	height: 100%;
+}
+.ching {
+	padding-left: 15px;
+	padding-top: 7px;
+}
+.cat {
+	padding-left: 8px;
+	padding-top: 5px;
+}
+.boss {
+	padding-top: 5px;
+}
+.thai {
+	padding-left: 6px;
+	position: relative;
+}
+.grid3 {
+	width: 190px;
+	height: 100%;
+}
+.arrow-r {
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top:50%;
+	background-color: pink;
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	font-family: arial;
+	background: rgba(0,0,0,.3);
+}	
+.arrow-l {
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top:50%;
+	right: 0;
+	background-color: pink;
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	font-family: arial;
+	background: rgba(0,0,0,.3);
+}
+.circle {
+	width: 175px;
+	height: 20px;
+	background: rgba(0,0,0,.3);
+	position:absolute;
+	transform: translateX(-50%);
+	bottom: 15px;
+	left: 50%;
+	border-radius: 10px;
+}
+.circle li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-left: 19px;
+	float: left;
+	margin-top: 4px;
+	cursor: pointer;
+}
+.circle .current {
+	background-color: #f10215;
+}
+.login {
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	/*background-color: pink;*/
+	padding: 15px;
+}
+.login-t {
+	width: 95px;
+	height: 60px;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a {
+	color: #666;
+}
+.login-t a:hover {
+	color: #f10512;
+}
+.user-info {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.user-info img {
+	width: 100%;
+	border-radius: 30%;
+}
+.news {
+	height: 154px;
+	border-bottom: 1px solid #ccc;
+	/*background-color: purple;*/
+	padding: 7px 13px 0;
+	box-sizing: border-box;
+}
+.news-t {
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a {
+	float: left;
+	height: 17px;
+	line-height: 17px;
+	color: #666;
+}
+.news-t .sales {
+	width: 38px;
+	height: 17px;
+	border-right: 1px solid #ccc;
+}
+.news-t .notification {
+	margin-left: 5px;
+}
+.news-t .more {
+	float: right;
+}
+.news-t div {
+	position: absolute;
+	bottom: -1px;
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+} 
+.news-b ul {
+	margin-top: 15px;
+}
+.news-b li {
+	margin-top: 3px;
+}
+.news-b a {
+	color: #666;
+}
+.news-b a:hover {
+	color: #f10512;
+}
+.expand {
+	height: 209px;
+	overflow: hidden;
+}
+.login-b a {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	border: 2px solid #f10;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 3px;
+	color: #f10215;
+}
+.login-b a:hover {
+	background-color: #f10215;
+	color: #fff;
+}
+.expand ul {
+	width: 192px;
+}
+.expand li {
+	width: 47px;
+	height: 69px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	float: left;
+	line-height: 69px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.expand a {
+	color: #666;
+}
+
+section {
+	width: 300px;
+	height: 300px;
+	margin: 75px auto;
+	/*background-color: pink;*/
+	background: url(../images/central.JPG) no-repeat;
+	background-size: cover;
+	position: relative;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+}
+
+section:hover {
+	transform: rotateY(360deg);
+	transition: 5s linear;
+}
+
+.rtt1 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt1.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(0deg) translateZ(400px);
+}
+.rtt2 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt2.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(60deg) translateZ(400px);
+}
+.rtt3 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt3.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(120deg) translateZ(400px);
+}
+.rtt4 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt4.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg) translateZ(400px);
+}
+.rtt5 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt5.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(240deg) translateZ(400px);
+}
+.rtt6 {
+	width: 300px;
+	height: 300px;
+	background: url(../images/rtt6.JPG) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(300deg) translateZ(400px);
+}
